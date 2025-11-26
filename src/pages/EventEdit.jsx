@@ -1,5 +1,3 @@
-// src/pages/EventEdit.jsx
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'; 
 import { useParams, useNavigate, Link } from 'react-router-dom';
@@ -171,7 +169,7 @@ const EventEdit = () => {
                                 </div>
                                 <div className="card-footer">
                                     <button type="submit" className="btn btn-warning" disabled={loading}>
-                                        {loading ? 'Simulasi Memproses...' : 'Simulasi Perbarui Event'}
+                                        {loading ? 'Memproses...' : 'Perbarui Event'}
                                     </button>
                                     <Link to="/event" className="btn btn-secondary ml-2">Batal</Link>
                                 </div>
