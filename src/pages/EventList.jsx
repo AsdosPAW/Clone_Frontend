@@ -102,7 +102,7 @@ const EventList = () => {
             <div className="container-fluid">
                 <div className="row mb-2">
                     <div className="col-sm-6">
-                        <h1 className="m-0">Daftar Event (SIMULASI DATA)</h1>
+                        <h1 className="m-0">Daftar Event</h1>
                     </div>
                     <div className="col-sm-6 text-right">
                         <Link to="/event/create" className="btn btn-primary">
@@ -142,7 +142,7 @@ const EventList = () => {
                                             </tr>
                                         ))}
                                         {events.length === 0 && (
-                                            <tr><td colSpan="5" className="text-center">Tidak ada data Event (Simulasi Kosong).</td></tr>
+                                            <tr><td colSpan="5" className="text-center">Tidak ada data Event.</td></tr>
                                         )}
                                     </tbody>
                                 </table>
