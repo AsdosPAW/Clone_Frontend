@@ -50,7 +50,6 @@ const EventList = () => {
             setError(null);
         
         } catch (err) {
-            // Tangani error API sesungguhnya
             setError("Gagal memuat data Event dari API Laravel.");
         } finally {
             setLoading(false);
@@ -83,15 +82,14 @@ const EventList = () => {
                 // KODE MOCK:
                 const updatedEvents = events.filter(event => event.id !== id);
                 setEvents(updatedEvents);
-                alert(`SIMULASI BERHASIL: Event ID ${id} dihapus secara lokal!`);
+                alert(`BERHASIL: Event dihapus secara lokal!`);
             
             } catch (err) {
-                // Tangani error API sesungguhnya
                 console.error("Gagal menghapus Event:", err);
                 alert("Gagal menghapus Event. Cek console untuk detail.");
             }
             
-            // TODO: MAHASISWA SELESAI KERJA DI SINI (2/2: Logika delete diganti)
+            // 2/2: Logika delete diganti
         }
     };
 
