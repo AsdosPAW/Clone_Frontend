@@ -1,7 +1,5 @@
-// src/components/EventForm.jsx
-
 import React, { useState } from 'react';
-import axios from 'axios'; // Import ini tetap ada sebagai petunjuk bagi mahasiswa
+import axios from 'axios'; 
 
 const API_BASE_URL = 'http://localhost:8000/api'; 
 
