@@ -94,7 +94,7 @@ const EventList = () => {
     };
 
 
-    if (loading) return <div className="p-4 text-center">**SIMULASI MEMUAT DATA...** (Tugas: Ganti dengan panggilan API GET)</div>;
+    if (loading) return <div className="p-4 text-center">(TO-DO: Ganti dengan panggilan API GET)</div>;
     if (error) return <div className="p-4 alert alert-danger">{error}</div>;
 
     return (
